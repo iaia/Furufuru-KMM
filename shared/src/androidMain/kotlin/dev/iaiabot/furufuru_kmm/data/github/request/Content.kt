@@ -1,0 +1,14 @@
+package dev.iaiabot.furufuru_kmm.data.github.request
+
+import kotlinx.serialization.Required
+
+@Serializable
+internal data class Content(
+    @Required
+    val message: String = "[ci skip] Upload furufuru image",
+    @Required
+    val content: String,
+    val sha: String? = null,
+    val branch: String? = null,
+    val committer: String? = null,
+)

@@ -1,0 +1,13 @@
+package dev.iaiabot.furufuru_kmm.data.github.response
+
+import kotlinx.serialization.SerialName
+
+@Serializable
+internal data class ContentInfoResponse(
+    val name: String,
+    val url: String,
+    @SerialName("html_url")
+    val htmlUrl: String,
+    @SerialName("download_url")
+    val downloadUrl: String
+)
