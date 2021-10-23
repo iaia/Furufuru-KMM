@@ -59,4 +59,19 @@ android {
             isMinifyEnabled = false
         }
     }
+
+    buildFeatures {
+        buildConfig = true
+        compose = true
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+        useIR = true
+    }
+
+    composeOptions {
+        kotlinCompilerVersion = "1.5.31"
+        kotlinCompilerExtensionVersion = "1.0.4"
+    }
 }

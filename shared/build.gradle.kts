@@ -32,29 +32,12 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 val kotlin_version = "1.5.31"
-                // coroutine
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
-
-                implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
-
-                implementation("com.google.android.material:material:1.4.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
 
                 // koin
                 val koin_version = "3.1.2"
-                // Koin main features for Android (Scope,ViewModel ...)
-                implementation("io.insert-koin:koin-android:$koin_version")
-                // Koin Java Compatibility
-                implementation("io.insert-koin:koin-android-compat:$koin_version")
-                // Koin for Jetpack WorkManager
-                implementation("io.insert-koin:koin-androidx-workmanager:$koin_version")
-                // Koin for Jetpack Compose
-                implementation("io.insert-koin:koin-androidx-compose:$koin_version")
-
-                // kotlin-serialization
-                implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-properties:1.0.1")
-                implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.6.0")
+                implementation("io.insert-koin:koin-core:$koin_version")
             }
         }
         val commonTest by getting {
