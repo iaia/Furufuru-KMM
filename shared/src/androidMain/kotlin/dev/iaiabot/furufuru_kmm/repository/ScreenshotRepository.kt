@@ -2,7 +2,7 @@ package dev.iaiabot.furufuru_kmm.repository
 
 import kotlinx.coroutines.flow.Flow
 
-internal interface ScreenshotRepository {
+interface ScreenshotRepository {
     val screenShotFlow: Flow<String?>
 
     suspend fun save(fileStr: String)

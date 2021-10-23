@@ -2,8 +2,7 @@ package dev.iaiabot.furufuru_kmm.data.github
 
 import android.util.Log
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
-import dev.iaiabot.furufuru.BuildConfig
-import dev.iaiabot.furufuru.util.GithubSettings
+import dev.iaiabot.furufuru_kmm.util.GithubSettings
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType
 import okhttp3.OkHttpClient
@@ -41,7 +40,8 @@ internal object GithubApiClient {
                     isLenient = true
                 }.asConverterFactory(contentType)
             )
-            baseUrl(BuildConfig.GITHUB_API_URL)
+            // TODO: KMM
+            // baseUrl(BuildConfig.GITHUB_API_URL)
             build()
         }
     }

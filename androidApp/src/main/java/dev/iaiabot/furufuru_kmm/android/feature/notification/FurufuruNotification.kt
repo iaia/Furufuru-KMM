@@ -1,4 +1,4 @@
-package dev.iaiabot.furufuru.feature.notification
+package dev.iaiabot.furufuru_kmm.android.feature.notification
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -8,8 +8,6 @@ import android.content.Context
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
-import androidx.core.graphics.drawable.IconCompat
-import dev.iaiabot.furufuru.R
 import dev.iaiabot.furufuru.feature.ui.issue.IssueActivity
 
 internal object FurufuruNotification {
@@ -41,7 +39,8 @@ internal object FurufuruNotification {
         val contentIntent = PendingIntent.getActivity(context, 0, target, 0)
         return NotificationCompat
             .Builder(context, Channels.FURUFURU.channelId)
-            .setSmallIcon(R.drawable.ic_send) // TODO: furufuruのアイコン作る
+            // TODO: KMM
+            // .setSmallIcon(R.drawable.ic_send) // TODO: furufuruのアイコン作る
             .setContentTitle("Furufuru is running")
             .setContentIntent(contentIntent) // 二重に設定する?
             .setCategory(Notification.CATEGORY_CALL)
@@ -60,7 +59,8 @@ internal object FurufuruNotification {
     ): NotificationCompat.BubbleMetadata {
         return NotificationCompat.BubbleMetadata
             .Builder()
-            .setIcon(IconCompat.createWithResource(context, R.drawable.ic_send))
+            // TODO: KMM
+            //.setIcon(IconCompat.createWithResource(context, R.drawable.ic_send))
             .setIntent(contentIntent)
             .setDesiredHeight(600)
             .setAutoExpandBubble(false)

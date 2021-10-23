@@ -1,0 +1,4 @@
+/*
+expect class ScreenShotter() {
+}
+ */

@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import dev.iaiabot.furufuru.feature.Furufuru
+import dev.iaiabot.furufuru_kmm.android.feature.Furufuru
 import dev.iaiabot.furufuru_kmm.android.feature.ui.issue.Command
 import dev.iaiabot.furufuru_kmm.android.feature.ui.issue.FurufuruScreen
 import dev.iaiabot.furufuru_kmm.android.feature.ui.issue.IssueViewModel

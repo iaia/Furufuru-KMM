@@ -1,16 +1,16 @@
 package dev.iaiabot.furufuru_kmm.util
 
-internal class GithubSettings {
-    companion object {
-        private const val DEFAULT_FURUFURU_BRANCH = "furufuru-image-branch"
-    }
+ class GithubSettings {
+     companion object {
+         private const val DEFAULT_FURUFURU_BRANCH = "furufuru-image-branch"
+     }
 
-    var githubApiToken: String = ""
-        private set
-    var githubRepositoryOwner: String = ""
-        private set
-    var githubRepository: String = ""
-        private set
+     var githubApiToken: String = ""
+         private set
+     var githubRepositoryOwner: String = ""
+         private set
+     var githubRepository: String = ""
+         private set
     var furufuruBranch: String = DEFAULT_FURUFURU_BRANCH
         private set
 

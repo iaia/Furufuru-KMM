@@ -1,4 +1,4 @@
-package dev.iaiabot.furufuru.feature.utils.lifecycle
+package dev.iaiabot.furufuru_kmm.android.feature.utils.lifecycle
 
 import android.app.Activity
 import android.app.Application
@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.view.View
 import dev.iaiabot.furufuru.feature.service.SensorService
 import dev.iaiabot.furufuru.feature.ui.issue.IssueActivity
-import dev.iaiabot.furufuru.feature.utils.screenshot.ScreenShotter
+import dev.iaiabot.furufuru_kmm.android.feature.utils.screenshot.ScreenShotter
 import org.koin.java.KoinJavaComponent.inject
 
 internal class FurufuruLifecycleCallback : Application.ActivityLifecycleCallbacks {

@@ -31,6 +31,18 @@ dependencies {
     // Integration with observables
     implementation("androidx.compose.runtime:runtime-livedata:$compose")
     implementation("androidx.compose.runtime:runtime-rxjava2:$compose")
+
+    // koin
+    val koin_version = "3.1.2"
+    // Koin main features for Android (Scope,ViewModel ...)
+    implementation("io.insert-koin:koin-android:$koin_version")
+    // Koin Java Compatibility
+    implementation("io.insert-koin:koin-android-compat:$koin_version")
+    // Koin for Jetpack WorkManager
+    implementation("io.insert-koin:koin-androidx-workmanager:$koin_version")
+    // Koin for Jetpack Compose
+    implementation("io.insert-koin:koin-androidx-compose:$koin_version")
+
 }
 
 android {

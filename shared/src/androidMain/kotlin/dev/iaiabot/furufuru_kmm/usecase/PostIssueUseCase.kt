@@ -8,6 +8,7 @@ import dev.iaiabot.furufuru_kmm.repository.IssueRepository
 import dev.iaiabot.furufuru_kmm.repository.ScreenshotRepository
 import dev.iaiabot.furufuru_kmm.usecase.user.SaveUsernameUseCase
 import dev.iaiabot.furufuru_kmm.util.GithubSettings
+import dev.iaiabot.furufuru_kmm.util.IssueBodyTemplate
 import kotlinx.coroutines.flow.single
 import java.text.SimpleDateFormat
 import java.util.*

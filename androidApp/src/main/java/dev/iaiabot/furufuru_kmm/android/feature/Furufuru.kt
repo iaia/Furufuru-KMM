@@ -1,10 +1,9 @@
-package dev.iaiabot.furufuru.feature
+package dev.iaiabot.furufuru_kmm.android.feature
 
 import android.app.Application
 import android.content.pm.PackageInfo
-import dev.iaiabot.furufuru.feature.utils.lifecycle.FurufuruLifecycleCallback
-import dev.iaiabot.furufuru.util.GithubSettings
-import dev.iaiabot.furufuru_kmm.di.diModules
+import dev.iaiabot.furufuru_kmm.android.feature.utils.lifecycle.FurufuruLifecycleCallback
+import dev.iaiabot.furufuru_kmm.util.GithubSettings
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -85,7 +84,8 @@ class Furufuru private constructor(
         startKoin {
             androidLogger()
             androidContext(application)
-            modules(diModules())
+            // TODO: KMM
+            // modules(diModules())
         }
     }
 

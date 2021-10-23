@@ -1,4 +1,4 @@
-package dev.iaiabot.furufuru_kmm.android.feature.utils.screenshot
+package dev.iaiabot.furufuru_kmm.util
 
 import android.graphics.Bitmap
 import android.graphics.Rect

@@ -1,8 +1,8 @@
 package dev.iaiabot.furufuru_kmm.repository
 
-import dev.iaiabot.furufuru.util.GithubSettings
 import dev.iaiabot.furufuru_kmm.data.github.GithubService
 import dev.iaiabot.furufuru_kmm.data.github.request.Issue
+import dev.iaiabot.furufuru_kmm.util.GithubSettings
 import kotlinx.serialization.ExperimentalSerializationApi
 
 internal class IssueRepositoryImpl(
