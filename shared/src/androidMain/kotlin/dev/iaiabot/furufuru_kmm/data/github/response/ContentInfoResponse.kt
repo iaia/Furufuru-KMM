@@ -1,6 +1,7 @@
 package dev.iaiabot.furufuru_kmm.data.github.response
 
 import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
 @Serializable
 internal data class ContentInfoResponse(

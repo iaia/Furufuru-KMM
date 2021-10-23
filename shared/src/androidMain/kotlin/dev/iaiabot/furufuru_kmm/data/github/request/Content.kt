@@ -1,6 +1,7 @@
 package dev.iaiabot.furufuru_kmm.data.github.request
 
 import kotlinx.serialization.Required
+import kotlinx.serialization.Serializable
 
 @Serializable
 internal data class Content(

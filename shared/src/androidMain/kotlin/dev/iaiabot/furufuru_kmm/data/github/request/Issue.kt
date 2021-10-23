@@ -1,5 +1,7 @@
 package dev.iaiabot.furufuru_kmm.data.github.request
 
+import kotlinx.serialization.Serializable
+
 @Serializable
 internal data class Issue(
     val title: String,
