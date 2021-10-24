@@ -10,7 +10,6 @@ import dev.iaiabot.furufuru_kmm.usecase.user.SaveUsernameUseCase
 import dev.iaiabot.furufuru_kmm.util.GithubSettings
 import dev.iaiabot.furufuru_kmm.util.IssueBodyTemplate
 import kotlinx.coroutines.flow.single
-import java.text.SimpleDateFormat
 
 interface PostIssueUseCase {
     suspend operator fun invoke(
@@ -78,7 +77,9 @@ internal class PostIssueUseCaseImpl(
 
     private fun generateUploadDestinationPath(): String {
         val now = java.util.Date()
-        val nowString = SimpleDateFormat("yyyy-MM-dd_hh:mm:ss").format(now)
+        // TODO: KMM
+        // val nowString = SimpleDateFormat("yyyy-MM-dd_hh:mm:ss").format(now)
+        val nowString = "xxxxx"
         return "$nowString.jpg"
     }
 }
