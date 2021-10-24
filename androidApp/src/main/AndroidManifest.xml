@@ -4,6 +4,7 @@
     package="dev.iaiabot.furufuru_kmm.android">
 
     <application
+        android:name=".feature.SampleApplication"
         android:allowBackup="false"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

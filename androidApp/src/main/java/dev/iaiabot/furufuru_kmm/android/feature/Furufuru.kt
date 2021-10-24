@@ -3,11 +3,7 @@ package dev.iaiabot.furufuru_kmm.android.feature
 import android.app.Application
 import android.content.pm.PackageInfo
 import dev.iaiabot.furufuru_kmm.android.feature.utils.lifecycle.FurufuruLifecycleCallback
-import dev.iaiabot.furufuru_kmm.di.diModules
 import dev.iaiabot.furufuru_kmm.util.GithubSettings
-import org.koin.android.ext.koin.androidContext
-import org.koin.android.ext.koin.androidLogger
-import org.koin.core.context.startKoin
 import org.koin.java.KoinJavaComponent.inject
 
 class Furufuru private constructor(
@@ -82,12 +78,15 @@ class Furufuru private constructor(
         FurufuruLifecycleCallback()
 
     init {
+        /*
         startKoin {
             androidLogger()
             androidContext(application)
             modules(diModules())
-            modules(module)
+            modules(androidModule, androidAppModule)
         }
+
+         */
     }
 
     internal fun start() {
