@@ -8,5 +8,5 @@ pluginManagement {
 
 rootProject.name = "Furufuru-KMM"
 include(":furufuruAndroid")
-include(":shared")
+include(":furufuruCore")
 include(":sample")

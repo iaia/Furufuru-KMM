@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":shared"))
+    implementation(project(":furufuruCore"))
     implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.appcompat:appcompat:1.3.1")
 
