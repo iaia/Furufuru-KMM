@@ -3,19 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="dev.iaiabot.furufuru_kmm.android">
 
-    <application
-        android:name=".feature.SampleApplication"
-        android:allowBackup="false"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".feature.SampleActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <application>
+
         <activity
             android:name=".feature.ui.issue.IssueActivity"
             android:allowEmbedded="true"
@@ -32,7 +22,6 @@
         <service
             android:name=".feature.service.SensorService"
             android:exported="false" />
-
             -->
     </application>
 </manifest>

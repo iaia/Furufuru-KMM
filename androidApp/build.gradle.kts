@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
 }
 
@@ -48,11 +48,10 @@ dependencies {
 android {
     compileSdkVersion(31)
     defaultConfig {
-        applicationId = "dev.iaiabot.furufuru_kmm.android"
         minSdkVersion(23)
         targetSdkVersion(31)
-        versionCode = 1
-        versionName = "1.0"
+        // versionCode = 1
+        // versionName = "1.0"
     }
     buildTypes {
         getByName("release") {
