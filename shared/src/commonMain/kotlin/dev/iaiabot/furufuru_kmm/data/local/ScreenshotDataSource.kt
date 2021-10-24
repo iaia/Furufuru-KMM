@@ -27,14 +27,6 @@ internal class ScreenshotDataSourceImpl(
         }
     }
 
-    /*
-    override fun load(): String? {
-        return synchronized(cache) {
-            cache.get(SCREENSHOT_KEY)
-        }
-    }
-     */
-
     override fun remove() {
         synchronized(cache) {
             cache.remove(SCREENSHOT_KEY)

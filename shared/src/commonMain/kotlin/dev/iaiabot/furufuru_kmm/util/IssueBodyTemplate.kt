@@ -1,7 +1,6 @@
 package dev.iaiabot.furufuru_kmm.util
 
 import android.os.Build
-import dev.iaiabot.furufuru_kmm.BuildConfig
 
 // issue repositoryにもっていきたい
 object IssueBodyTemplate {
