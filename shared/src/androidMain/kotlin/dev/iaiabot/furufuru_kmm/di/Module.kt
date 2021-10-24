@@ -23,13 +23,12 @@ import io.ktor.client.engine.android.*
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
-internal fun diModules() = listOf(
+fun diModules() = listOf(
     apiModule,
     repositoryModule,
     useCaseModule,
     utilModule,
     dataModule,
-    androidModule,
 )
 
 private val apiModule = module {
@@ -81,14 +80,3 @@ private val dataModule = module {
     single<ScreenshotDataSource> { ScreenshotDataSourceImpl(get(named("ScreenShotCache"))) }
 }
 
-private val androidModule = module {
-    /*
-    single<SharedPreferences> {
-        androidApplication().getSharedPreferences(
-            "furufuru",
-            Context.MODE_PRIVATE
-        )
-    }
-
-     */
-}

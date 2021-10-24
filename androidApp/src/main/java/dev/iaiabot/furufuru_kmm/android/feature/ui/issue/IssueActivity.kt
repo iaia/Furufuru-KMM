@@ -1,4 +1,4 @@
-package dev.iaiabot.furufuru.feature.ui.issue
+package dev.iaiabot.furufuru_kmm.android.feature.ui.issue
 
 import android.content.Context
 import android.content.Intent
@@ -7,9 +7,6 @@ import android.widget.Toast
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import dev.iaiabot.furufuru_kmm.android.feature.Furufuru
-import dev.iaiabot.furufuru_kmm.android.feature.ui.issue.Command
-import dev.iaiabot.furufuru_kmm.android.feature.ui.issue.FurufuruScreen
-import dev.iaiabot.furufuru_kmm.android.feature.ui.issue.IssueViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 internal class IssueActivity : AppCompatActivity() {

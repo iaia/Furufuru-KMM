@@ -15,9 +15,9 @@ import android.os.Build
 import android.os.IBinder
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
-import dev.iaiabot.furufuru.feature.ui.issue.IssueActivity
 import dev.iaiabot.furufuru_kmm.android.feature.Furufuru
 import dev.iaiabot.furufuru_kmm.android.feature.notification.FurufuruNotification
+import dev.iaiabot.furufuru_kmm.android.feature.ui.issue.IssueActivity
 import kotlin.math.sqrt
 
 internal class SensorService : Service() {

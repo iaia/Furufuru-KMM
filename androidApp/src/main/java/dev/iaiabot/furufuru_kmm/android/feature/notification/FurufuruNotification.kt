@@ -8,7 +8,7 @@ import android.content.Context
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
-import dev.iaiabot.furufuru.feature.ui.issue.IssueActivity
+import dev.iaiabot.furufuru_kmm.android.feature.ui.issue.IssueActivity
 
 internal object FurufuruNotification {
     enum class Channels(val channelId: String, val channelName: String) {
