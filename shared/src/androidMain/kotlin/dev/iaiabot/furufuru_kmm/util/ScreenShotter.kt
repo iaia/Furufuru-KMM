@@ -1,14 +1,9 @@
 package dev.iaiabot.furufuru_kmm.util
 
 import android.graphics.Bitmap
-import android.graphics.Rect
-import android.os.Build
-import android.os.Handler
 import android.util.Base64
-import android.view.PixelCopy
 import android.view.View
 import android.view.Window
-import androidx.annotation.RequiresApi
 import dev.iaiabot.furufuru_kmm.repository.ScreenshotRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -36,6 +31,7 @@ internal class ScreenShotter(
         screenShotting = true
         job?.cancel()
         job = launch(Dispatchers.Main) {
+            /*
             try {
                 val bitmap = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                     getBitmapFromView(window, view)
@@ -49,6 +45,7 @@ internal class ScreenShotter(
             } finally {
                 screenShotting = false
             }
+             */
         }
     }
 
@@ -77,6 +74,7 @@ internal class ScreenShotter(
             }
         }
     }
+    /*
 
     @RequiresApi(Build.VERSION_CODES.O)
     private suspend fun getBitmapFromView(window: Window, view: View): Bitmap? {
@@ -108,4 +106,5 @@ internal class ScreenShotter(
             }
         }
     }
+     */
 }
