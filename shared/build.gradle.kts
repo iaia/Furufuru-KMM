@@ -81,3 +81,6 @@ android {
         targetSdkVersion(31)
     }
 }
+dependencies {
+    implementation("androidx.annotation:annotation:1.2.0")
+}

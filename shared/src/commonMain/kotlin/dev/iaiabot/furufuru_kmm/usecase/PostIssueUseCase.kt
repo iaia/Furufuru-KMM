@@ -11,14 +11,13 @@ import dev.iaiabot.furufuru_kmm.util.GithubSettings
 import dev.iaiabot.furufuru_kmm.util.IssueBodyTemplate
 import kotlinx.coroutines.flow.single
 import java.text.SimpleDateFormat
-import java.util.*
 
 interface PostIssueUseCase {
     suspend operator fun invoke(
         title: String?,
         userName: String?,
         body: String?,
-        labels: List<String> = emptyList()
+        labels: List<String> = emptyList(),
     )
 }
 
@@ -78,8 +77,8 @@ internal class PostIssueUseCaseImpl(
     }
 
     private fun generateUploadDestinationPath(): String {
-        val now = Date()
-        val nowString = SimpleDateFormat("yyyy-MM-dd_hh:mm:ss", Locale.getDefault()).format(now)
+        val now = java.util.Date()
+        val nowString = SimpleDateFormat("yyyy-MM-dd_hh:mm:ss").format(now)
         return "$nowString.jpg"
     }
 }

@@ -11,26 +11,9 @@ internal interface ScreenshotDataSource {
     fun remove()
 }
 
-internal class ScreenshotDataSourceImpl(
-    private val cache: LruCache<String, String>
+internal expect class ScreenshotDataSourceImpl(
+    cache: LruCache<String, String>
 ) : ScreenshotDataSource {
-    companion object {
-        private const val SCREENSHOT_KEY = "screenshot"
-    }
 
-    override val screenShotFlow = MutableStateFlow<String?>(null)
-
-    override suspend fun save(fileStr: String) {
-        synchronized(cache) {
-            cache.put(SCREENSHOT_KEY, fileStr)
-            screenShotFlow.tryEmit(fileStr)
-        }
-    }
-
-    override fun remove() {
-        synchronized(cache) {
-            cache.remove(SCREENSHOT_KEY)
-            screenShotFlow.tryEmit(null)
-        }
-    }
+    override val screenShotFlow: MutableStateFlow<String?>
 }

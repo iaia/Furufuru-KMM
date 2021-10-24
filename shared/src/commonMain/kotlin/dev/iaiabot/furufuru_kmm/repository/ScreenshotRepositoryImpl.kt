@@ -14,14 +14,4 @@ internal class ScreenshotRepositoryImpl(
     override fun remove() {
         screenshotDataSource.remove()
     }
-
-    /*
-    override fun load(remove: Boolean): String? {
-        val file = screenshot.load()
-        if (remove) {
-            screenshot.remove()
-        }
-        return file
-    }
-     */
 }
