@@ -41,8 +41,7 @@ internal object FurufuruNotification {
         val contentIntent = PendingIntent.getActivity(context, 0, target, 0)
         return NotificationCompat
             .Builder(context, Channels.FURUFURU.channelId)
-            // TODO: KMM
-            // .setSmallIcon(R.drawable.ic_send) // TODO: furufuruのアイコン作る
+            .setSmallIcon(R.drawable.ic_send) // TODO: furufuruのアイコン作る
             .setContentTitle("Furufuru is running")
             .setContentIntent(contentIntent) // 二重に設定する?
             .setCategory(Notification.CATEGORY_CALL)

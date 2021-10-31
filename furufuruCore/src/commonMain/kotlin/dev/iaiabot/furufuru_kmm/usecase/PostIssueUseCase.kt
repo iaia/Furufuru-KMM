@@ -26,6 +26,7 @@ internal class PostIssueUseCaseImpl(
     private val contentRepository: ContentRepository,
     private val githubSettings: GithubSettings,
     private val saveUsernameUseCase: SaveUsernameUseCase,
+    private val generateUploadDestinationPathUseCase: GenerateUploadDestinationPathUseCase,
 ) : PostIssueUseCase {
 
     override suspend fun invoke(
@@ -67,19 +68,11 @@ internal class PostIssueUseCaseImpl(
             branch = githubSettings.furufuruBranch
         )
         try {
-            val result = contentRepository.post(content, generateUploadDestinationPath())
+            val result = contentRepository.post(content, generateUploadDestinationPathUseCase())
             screenshotRepository.remove()
             return result
         } catch (e: Exception) {
             throw e
         }
-    }
-
-    private fun generateUploadDestinationPath(): String {
-        val now = java.util.Date()
-        // TODO: KMM
-        // val nowString = SimpleDateFormat("yyyy-MM-dd_hh:mm:ss").format(now)
-        val nowString = "xxxxx"
-        return "$nowString.jpg"
     }
 }
