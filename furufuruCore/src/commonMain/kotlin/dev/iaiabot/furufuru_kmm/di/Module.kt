@@ -17,7 +17,6 @@ import dev.iaiabot.furufuru_kmm.usecase.user.LoadUserNameUseCaseImpl
 import dev.iaiabot.furufuru_kmm.usecase.user.SaveUsernameUseCase
 import dev.iaiabot.furufuru_kmm.usecase.user.SaveUsernameUseCaseImpl
 import dev.iaiabot.furufuru_kmm.util.GithubSettings
-import dev.iaiabot.furufuru_kmm.util.ScreenShotter
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
