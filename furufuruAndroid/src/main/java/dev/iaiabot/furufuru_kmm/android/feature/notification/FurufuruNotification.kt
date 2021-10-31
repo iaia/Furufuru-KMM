@@ -8,6 +8,8 @@ import android.content.Context
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
+import androidx.core.graphics.drawable.IconCompat
+import dev.iaiabot.furufuru_kmm.android.R
 import dev.iaiabot.furufuru_kmm.android.feature.ui.issue.IssueActivity
 
 internal object FurufuruNotification {
@@ -59,8 +61,7 @@ internal object FurufuruNotification {
     ): NotificationCompat.BubbleMetadata {
         return NotificationCompat.BubbleMetadata
             .Builder()
-            // TODO: KMM
-            //.setIcon(IconCompat.createWithResource(context, R.drawable.ic_send))
+            .setIcon(IconCompat.createWithResource(context, R.drawable.ic_send))
             .setIntent(contentIntent)
             .setDesiredHeight(600)
             .setAutoExpandBubble(false)

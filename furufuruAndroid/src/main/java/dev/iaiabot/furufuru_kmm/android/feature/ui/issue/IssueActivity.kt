@@ -36,9 +36,6 @@ internal class IssueActivity : AppCompatActivity() {
                     Toast.makeText(this, "posted!", Toast.LENGTH_SHORT).show()
                     finish()
                 }
-                is Command.ShowFilePath -> {
-                    // Toast.makeText(this, "filePath: ${it.filePath}", android.widget.Toast.LENGTH_LONG).show()
-                }
                 is Command.Error -> {
                     Toast.makeText(this, it.errorMessage, Toast.LENGTH_LONG).show()
                 }

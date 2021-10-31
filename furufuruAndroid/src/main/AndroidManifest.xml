@@ -18,10 +18,8 @@
             android:windowSoftInputMode="adjustResize"
             tools:targetApi="n" />
 
-        <!--
         <service
             android:name=".feature.service.SensorService"
             android:exported="false" />
-            -->
     </application>
 </manifest>

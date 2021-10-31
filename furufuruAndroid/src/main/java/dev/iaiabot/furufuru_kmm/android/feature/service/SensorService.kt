@@ -1,4 +1,4 @@
-package dev.iaiabot.furufuru.feature.service
+package dev.iaiabot.furufuru_kmm.android.feature.service
 
 import android.app.NotificationManager
 import android.app.Service

@@ -64,7 +64,6 @@ private val useCaseModule = module {
 }
 
 private val utilModule = module {
-    single { ScreenShotter(get()) }
     single { GithubSettings() }
     single(named("ScreenShotCache")) { LruCache<String, String>(1) }
 }

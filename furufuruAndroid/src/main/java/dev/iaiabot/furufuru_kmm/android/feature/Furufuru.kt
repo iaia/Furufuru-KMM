@@ -2,6 +2,7 @@ package dev.iaiabot.furufuru_kmm.android.feature
 
 import android.app.Application
 import android.content.pm.PackageInfo
+import dev.iaiabot.furufuru_kmm.android.feature.di.androidAppModule
 import dev.iaiabot.furufuru_kmm.android.feature.utils.lifecycle.FurufuruLifecycleCallback
 import dev.iaiabot.furufuru_kmm.di.androidModule
 import dev.iaiabot.furufuru_kmm.di.diModules

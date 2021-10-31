@@ -1,4 +1,4 @@
-package dev.iaiabot.furufuru_kmm.android.feature
+package dev.iaiabot.furufuru_kmm.android.feature.di
 
 import android.content.Context
 import android.content.SharedPreferences
