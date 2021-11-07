@@ -1,9 +1,9 @@
 package dev.iaiabot.furufuru_kmm.util
 
-import dev.iaiabot.furufuru_kmm.BuildConfig
-
 actual class IssueBodyForOs {
     actual operator fun invoke(): String {
+        return ""
+        /* TODO: KMM
         var body = ""
         body = body.replace(IssueBodyTemplate.FURUFURU_VERSION_NAME, BuildConfig.VERSION_NAME)
         body = body.replace(
@@ -11,6 +11,8 @@ actual class IssueBodyForOs {
             BuildConfig.VERSION_CODE.toString()
         )
         return body
+         */
+
 
         /*
         Furufuru.getApplicationName()?.let {

@@ -8,10 +8,7 @@ import dev.iaiabot.furufuru_kmm.data.local.ScreenshotDataSourceImpl
 import dev.iaiabot.furufuru_kmm.data.local.UserDataSource
 import dev.iaiabot.furufuru_kmm.data.local.UserDataSourceImpl
 import dev.iaiabot.furufuru_kmm.repository.*
-import dev.iaiabot.furufuru_kmm.usecase.GetScreenShotUseCase
-import dev.iaiabot.furufuru_kmm.usecase.GetScreenShotUseCaseImpl
-import dev.iaiabot.furufuru_kmm.usecase.PostIssueUseCase
-import dev.iaiabot.furufuru_kmm.usecase.PostIssueUseCaseImpl
+import dev.iaiabot.furufuru_kmm.usecase.*
 import dev.iaiabot.furufuru_kmm.usecase.user.LoadUserNameUseCase
 import dev.iaiabot.furufuru_kmm.usecase.user.LoadUserNameUseCaseImpl
 import dev.iaiabot.furufuru_kmm.usecase.user.SaveUsernameUseCase
@@ -59,8 +56,9 @@ private val repositoryModule = module {
 private val useCaseModule = module {
     single<SaveUsernameUseCase> { SaveUsernameUseCaseImpl(get()) }
     single<LoadUserNameUseCase> { LoadUserNameUseCaseImpl(get()) }
-    single<PostIssueUseCase> { PostIssueUseCaseImpl(get(), get(), get(), get(), get()) }
+    single<PostIssueUseCase> { PostIssueUseCaseImpl(get(), get(), get(), get(), get(), get()) }
     single<GetScreenShotUseCase> { GetScreenShotUseCaseImpl(get()) }
+    single<GenerateUploadDestinationPathUseCase> { GenerateUploadDestinationPathUseCase() }
 }
 
 private val utilModule = module {

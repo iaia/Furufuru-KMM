@@ -65,7 +65,7 @@ $USERS_BODY
         body = body.replace(DEVICE_VERSION, Build.MANUFACTURER + " " + Build.MODEL)
         body = body.replace(DEVICE_OS, Build.VERSION.RELEASE)
 
-
+        body = IssueBodyForOs().invoke()
 
         return body
     }
